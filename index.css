@@ -1,0 +1,61 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(93, 93, 248);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(3, 3, 110);
+  font-weight: 800;
+  text-decoration: underline;
+  font-size: 40px;
+}
+h2 {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.Members {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr repeat(2);
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+.team {
+  border: 2px solid black;
+  padding: 20px;
+  width: 300px;
+  background-color: rgb(3, 3, 110);
+  color: white;
+}
+h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-weight: 600;
+  }
+  h2 {
+    font-weight: normal;
+  }
+  .Members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+  .team {
+    border: 1px dotted black;
+    padding: 10px;
+    width: 200px;
+  }
+}
